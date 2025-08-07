@@ -4,6 +4,7 @@
 }
 
 * {
+    
     font-family: gozaar SemiBold;
 }
 h1{
@@ -11,15 +12,23 @@ h1{
     font-size: 50px;
 }
 .pricing-card {
-    display : inline-table;
-    width: 300px;
+    display : inline-block;
+    justify-content: center;
+    flex-direction: column;
+    width: 280px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 80px;
+    margin: 40px;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
     border: 2px solid #ccc  ;
+    transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+}
+.pricing-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+  background: #f2f2f2;
 }
 .h2 {
     font-size: 1.5em;
@@ -48,6 +57,62 @@ h1{
 
 .pricing-card ul li {
     padding: 5px 0;
+}
+.pricing-card img {
+    align-content: center;
+
+}
+.main-header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  background: #e3f0ff;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 30px;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.menu ul li a:hover {
+  color: #007bff;
+}
+.site-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 2px;
+}
+.user-account a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1em;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  padding: 6px 18px;
+  transition: background 0.2s, color 0.2s;
+}
+.user-account a:hover {
+  background: #007bff;
+  color: #fff;
+}
+.courses-bg {
+  background: #f6f6f6;
+  padding: 40px 0 60px 0;
+  border-radius: 18px;
+  margin-bottom: 30px;
 }
 .pricing-card img {
     align-content: center;
